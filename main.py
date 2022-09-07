@@ -20,7 +20,7 @@ else:
 
 # win = pygame.display.set_mode(SCREEN, pygame.SCALED | pygame.FULLSCREEN)
 clock = pygame.time.Clock()
-FPS = 60
+FPS = 30
 
 # COLORS
 
@@ -61,14 +61,14 @@ grumpy = Grumpy(win)
 # Variables
 
 base_height = 0.80 * HEIGHT
-speed = 0
+speed = 2
 game_started = False
 game_over = False
 restart = False
 score = 0
 start_screen = True
 pipe_pass = False
-pipe_frequency = 1600
+pipe_frequency = 2400
 
 running =  True
 while running:
@@ -110,7 +110,7 @@ while running:
 			grumpy.theta = grumpy.vel * -2
 	
 		if grumpy.rect.bottom >= display_height:
-			speed = 0
+			speed = 2
 			game_over = True
 	
 		if len(pipe_group) > 0:
