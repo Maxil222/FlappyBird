@@ -73,7 +73,7 @@ class Grumpy:
 		self.index = 0
 		self.image = self.im_list[self.index]
 		self.rect = self.image.get_rect()
-		self.rect.x = 60
+		self.rect.x = 30
 		self.rect.y = int(display_height) // 2
 		self.counter = 0
 		self.vel = 0
