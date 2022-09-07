@@ -75,7 +75,7 @@ while running:
 	win.blit(bg, (0,0))
 	
 	if start_screen:
-		speed = 0
+		speed = 2
 		grumpy.draw_flap()
 		base.update(speed)
 		
@@ -143,7 +143,7 @@ while running:
 				game_over = False
 			#	grumpy.reset()
 				last_pipe = pygame.time.get_ticks() - pipe_frequency
-				next_pipe = 0
+				next_pipe = 1
 				pipe_group.empty()
 				
 				speed = 2
